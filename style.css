@@ -1,0 +1,180 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #111;
+  background-color: #f8fafc;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e63946;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+  color: #111;
+  padding: 200px 20px 150px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #e63946;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c62828;
+}
+
+.guarantee {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Features */
+.features {
+  padding: 100px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.feature-card {
+  background-color: #f9fafb;
+  border-radius: 16px;
+  padding: 40px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+/* Advantages */
+.advantages {
+  background-color: #f1f5f9;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.advantage {
+  margin: 30px 0;
+}
+
+.advantage h3 {
+  color: #e63946;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Servers Section */
+.servers {
+  background-color: #fff;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.stats h3 {
+  font-size: 2.5rem;
+  color: #e63946;
+}
+
+.stats p {
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #f8fafc;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
